@@ -40,11 +40,6 @@
     });
   }
 
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => preloader.remove());
-  }
-
   window.addEventListener('load', () => {
     if (window.AOS) {
       AOS.init({ duration: 600, easing: 'ease-in-out', once: true, mirror: false });
